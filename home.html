@@ -1,0 +1,139 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="_ctl0_Head"><title>
+    ParentConnection - Grades
+</title><meta content="JavaScript" name="vs_defaultClientScript"><meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema"><link href="StyleSheets/PCMaster.css" type="text/css" rel="stylesheet" />
+    <script language="javascript">
+        <!--
+        function getDocumentElementById(elementID){
+            if (document.getElementById){
+                return document.getElementById(elementID);
+            }else{
+                if (document.all){
+                    return document.all(elementID);
+                }else{
+                    if (document.layers){
+                        return document.layers(elementID);
+                    }else{
+                        return eval('document.forms[0].' + elementID);
+                    }
+                }
+            }
+        }
+
+        function __RunPostBack(eventTarget, eventArgument, eventArgument2) {
+            var theform;
+            //if (window.navigator.appName.toLowerCase().indexOf("netscape") > -1) {
+            //   theform = document.forms["Form1"];
+            //}else {
+            //   theform = document.Form1;
+            //}
+            theform = document.forms[0];
+            theform.__RUNEVENTTARGET.value = eventTarget.split("$").join(":");
+            theform.__RUNEVENTARGUMENT.value = eventArgument;
+            theform.__RUNEVENTARGUMENT2.value = eventArgument2;
+            theform.submit();
+        }
+        // --></script>
+</head>
+<body id="_ctl0_documentBody">
+<form name="aspnetForm" method="post" action="ParentStudentGrades.aspx" id="aspnetForm">
+    <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTkwNTg4MzgyMg9kFgJmD2QWBAIBD2QWAgIDDxYCHgRUZXh0BUk8bGluayBocmVmPSJTdHlsZVNoZWV0cy9QQ01hc3Rlci5jc3MiIHR5cGU9InRleHQvY3NzIiByZWw9InN0eWxlc2hlZXQiIC8+ZAIDD2QWAgIBD2QWBgIBD2QWAmYPFgQeB2NvbHNwYW4FATIeCWlubmVyaHRtbAUWJm5ic3A7UGFyZW50Q29ubmVjdGlvbmQCAw9kFhICAQ8WAh8ABTM8aW1nIHNyYz0iR2V0RmlsZS5hc3B4P2RzdHI9NTc5MDUmYW1wO2Rlc2M9TG9nbyIgLz5kAgMPFgIfAAUNRGFsbGFzIEkuUy5ELmQCBQ8WAh8ABRs8YnIgLz4wNjkgU2VhZ292aWxsZSBNaWRkbGVkAgkPEA8WAh4HVmlzaWJsZWhkEBUBE01hcnRpbmV6LCBHdWFkYWx1cGUVAQczMDI5OTEyFCsDAWcWAWZkAgsPDxYCHwNoZGQCDQ8PFgIfAAUTTWFydGluZXosIEd1YWRhbHVwZWRkAhEPFgIfAAXlByAgICAgICAgICAgICAgIDx1bCBjbGFzcz0iTmF2QmFyTGlua3MiPg0KICAgICAgICAgICAgICAgICAgPGxpIGlkPSJsbmtIb21lQnVsbGV0Ij48YSBocmVmPSJQYXJlbnRNYWluLmFzcHgiIGlkPSJsbmtIb21lIj5Ib21lPC9hPjwvbGk+DQogICAgICAgICAgICAgICAgICA8bGkgaWQ9Imxua0Fzc2lnbm1lbnRzQnVsbGV0Ij48YSBocmVmPSJQYXJlbnRBc3NpZ25tZW50cy5hc3B4IiBpZD0ibG5rQXNzaWdubWVudHMiPkFzc2lnbm1lbnRzPC9hPjwvbGk+DQogICAgICAgICAgICAgICAgICA8bGkgaWQ9Imxua0dyYWRlc0J1bGxldCI+PGEgaHJlZj0iUGFyZW50U3R1ZGVudEdyYWRlcy5hc3B4IiBpZD0ibG5rR3JhZGVzIj5HcmFkZXM8L2E+PC9saT4NCiAgICAgICAgICAgICAgICAgIDxsaSBpZD0ibG5rQXR0ZW5kYW5jZUJ1bGxldCI+PGEgaHJlZj0iUGFyZW50U3R1ZGVudEF0dGVuZC5hc3B4IiBpZD0ibG5rQXR0ZW5kYW5jZSI+QXR0ZW5kYW5jZTwvYT48L2xpPg0KICAgICAgICAgICAgICAgICAgPGxpIGlkPSJsbmtUcmlnZ2Vyc0J1bGxldCI+PGEgaHJlZj0iUGFyZW50TWFuYWdlVHJpZ2dlcnMuYXNweCIgaWQ9Imxua1RyaWdnZXJzIj5UcmlnZ2VyczwvYT48L2xpPg0KICAgICAgICAgICAgICAgICAgPGxpIGlkPSJsbmtDYWxlbmRhckJ1bGxldCI+PGEgaHJlZj0iUGFyZW50Q2FsZW5kYXIuYXNweCIgaWQ9Imxua0NhbGVuZGFyIj5DYWxlbmRhcjwvYT48L2xpPg0KICAgICAgICAgICAgICAgICAgPGxpIGlkPSJsbmtNYW5hZ2VTdHVkZW50c0J1bGxldCI+PGEgaHJlZj0iUGFyZW50TWFuYWdlU3R1ZGVudHMuYXNweCIgaWQ9Imxua01hbmFnZVN0dWRlbnRzIj5NYW5hZ2UgU3R1ZGVudHM8L2E+PC9saT4NCiAgICAgICAgICAgICAgICAgIDxsaSBpZD0ibG5rTXlTZXR0aW5nc0J1bGxldCI+PGEgaHJlZj0iUGFyZW50TXlTZXR0aW5ncy5hc3B4IiBpZD0ibG5rTXlTZXR0aW5ncyI+TXkgU2V0dGluZ3M8L2E+PC9saT4NCiAgICAgICAgICAgICAgIDwvdWw+DQpkAhUPDxYCHwAFBnJlZHV4ZGRkAhkPFgIfAAWcBE51bWVyaWNhbCBHcmFkZSBSYW5nZXM6PEJSPjkwLTEwMCA9IEE8QlI+ODAtODkgPSBCPEJSPjc1LTc5ID0gQzxCUj43MC03NCA9IEQ8QlI+QmVsb3cgNzAJRmFpbGluZzxCUj5JID0gSW5jb21wbGV0ZSAobXVzdCBiZSBtYWRlIHVwIHdpdGhpbiBhIHJlYXNvbmFibGUgcGVyaW9kIG9mIHRpbWUpPFA+PEJSPlJlcG9ydCBDYXJkIEdyYWRlcyBmb3IgUHJlLUssIEtpbmRlciwgYW5kIDFzdCBHcmFkZTxCUj5FPSBFeGNlbGxlbmNlL0NvbnNpc3RlbnQgUHJvZ3Jlc3M8QlI+UyA9IFNhdGlzZmFjdG9yeSBQcm9ncmVzczxCUj5OID0gTmVlZHMgSW1wcm92ZW1lbnQvQWRkaXRpb25hbCBUaW1lIGZvciBMZWFybmluZzxQPjwhLS08QlI+PHRhYmxlIGJvcmRlcj0xIGNlbGxwYWRkaW5nPTEwIGFsaWduPWNlbnRlcj48dHI+PHRkPjxCUj5Gb3VydGggZ3JhZGUgQXJ0IEFDUCBleGFtIHNjb3JlIGlzIGRpc3BsYXllZCw8QlI+YnV0IE5PVCBjYWxjdWxhdGVkIGFzIHBhcnQgb2YgdGhlIHNlbWVzdGVyIGF2ZXJhZ2UuPFA+PC90ZD48L3RyPjwvdGFibGU+PEJSPi0tPmQCBQ8WBB4FYWxpZ24FBGxlZnQeBWNsYXNzBQ9NYWluQ29udGVudExlZnQWAgIBD2QWAgIDDxYCHwAFyQFJZiBhbnkgZ3JhZGUgb3IgYXR0ZW5kYW5jZSBkaXNjcmVwYW5jaWVzIG9jY3VyIGJldHdlZW4gdGhlIHJlcG9ydCBjYXJkIGFuZCBQYXJlbnQgUG9ydGFsLCB0aGUgcmVwb3J0IGNhcmQgcHJpbnRlZCBmcm9tIHRoZSBkaXN0cmljdOKAmXMgc3R1ZGVudCBpbmZvcm1hdGlvbiBzeXN0ZW0gaXMgdGhlIG9mZmljaWFsIHJlY29yZCBvZiB0aGUgc3R1ZGVudC5kZLZHhWkJFmfkdkSs13MIuAp0/Y36" />
+
+    <script language="Javascript">
+        window.onscroll = function(){
+            saveScrollParameters();}
+
+        function saveScrollParameters(){
+            getScrollDocumentElement('__scrollLeft').value = document.body.scrollLeft + '';
+            getScrollDocumentElement('__scrollTop').value = document.body.scrollTop + '';
+            window.status = 'scroll ' + document.body.scrollLeft + ', ' + document.body.scrollTop;}
+
+        function getScrollDocumentElement(elementID){
+            if (document.getElementById){
+                return document.getElementById(elementID);
+            }else{
+                if (document.all){
+                    return document.all(elementID);
+                }else{
+                    if (document.layers){
+                        return document.layers(elementID);
+                    }
+                }
+            }
+        }
+    </script><input type="hidden" name="__scrollLeft" id="__scrollLeft" value="0"><input type="hidden" name="__scrollTop" id="__scrollTop" value="0">
+    <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="98F018D0" />
+    <input type="hidden" name="__RUNEVENTTARGET" />
+    <input type="hidden" name="__RUNEVENTARGUMENT" />
+    <input type="hidden" name="__RUNEVENTARGUMENT2" />
+    <table border="0" cellspacing="0" cellpadding="0" class="MainTable">
+        <tr class="Banner">
+            <td colspan="2"></td>
+        </tr>
+        <tr id="_ctl0_trTitleBar" class="TitleBar">
+            <td id="_ctl0_tdTitleBar" colspan="2">&nbsp;ParentConnection</td>
+        </tr>
+
+        <tr>
+            <td id="_ctl0_tdNavBar" class="NavBar">
+                <img src="GetFile.aspx?dstr=57905&amp;desc=Logo" />
+                <p class="DistrictName">
+                    Dallas I.S.D.
+                    <span class="NormalFontWeight"><br />069 Seagoville Middle</span>
+                </p>
+                <span id="_ctl0_lblStudentHeader" class="CurrentStudent">Current Student:</span><br />
+
+                <noscript>
+                </noscript>
+                <span id="_ctl0_lblStudent">Martinez, Guadalupe</span><br />
+                &nbsp;<br />
+                Select a section:
+                <ul class="NavBarLinks">
+                    <li id="lnkHomeBullet"><a href="ParentMain.aspx" id="lnkHome">Home</a></li>
+                    <li id="lnkAssignmentsBullet"><a href="ParentAssignments.aspx" id="lnkAssignments">Assignments</a></li>
+                    <li id="lnkGradesBullet"><a href="ParentStudentGrades.aspx" id="lnkGrades">Grades</a></li>
+                    <li id="lnkAttendanceBullet"><a href="ParentStudentAttend.aspx" id="lnkAttendance">Attendance</a></li>
+                    <li id="lnkTriggersBullet"><a href="ParentManageTriggers.aspx" id="lnkTriggers">Triggers</a></li>
+                    <li id="lnkCalendarBullet"><a href="ParentCalendar.aspx" id="lnkCalendar">Calendar</a></li>
+                    <li id="lnkManageStudentsBullet"><a href="ParentManageStudents.aspx" id="lnkManageStudents">Manage Students</a></li>
+                    <li id="lnkMySettingsBullet"><a href="ParentMySettings.aspx" id="lnkMySettings">My Settings</a></li>
+                </ul>
+
+                <br />
+                <p class="CurrentUser">
+                    You are currently logged in as
+                    <span id="_ctl0_lblParentCurrUser" class="UserName">reduxd</span>.
+                </p>
+                <p id="_ctl0_lblParentLogout" class="LogOut">
+                    [<a href="Logout.aspx">Log Out</a>]
+                </p>
+                Numerical Grade Ranges:<BR>90-100 = A<BR>80-89 = B<BR>75-79 = C<BR>70-74 = D<BR>Below 70	Failing<BR>I = Incomplete (must be made up within a reasonable period of time)<P><BR>Report Card Grades for Pre-K, Kinder, and 1st Grade<BR>E= Excellence/Consistent Progress<BR>S = Satisfactory Progress<BR>N = Needs Improvement/Additional Time for Learning<P><!--<BR><table border=1 cellpadding=10 align=center><tr><td><BR>Fourth grade Art ACP exam score is displayed,<BR>but NOT calculated as part of the semester average.<P></td></tr></table><BR>-->
+            </td>
+
+            <td id="_ctl0_tdMainContent" align="left" class="MainContentLeft">
+
+                <span class="PageHeader">Student Grades</span>
+                <p class="PageNote">If any grade or attendance discrepancies occur between the report card and Parent Portal, the report card printed from the district’s student information system is the official record of the student.</p>
+                <P><div class="StudentHeader"><span class="StudentName">Martinez, Guadalupe</span> (069 Seagoville Middle)</div><table border="0" cellspacing="0" cellpadding="3" class="DataTable"><tr class="TableHeader"><th align="left" scope="col">Teacher</th><th align="left" scope="col">Notes</th><th align="left" scope="col">Course</th><th align="left" scope="col">Period</th><th align="left" scope="col">Cycle 1</th><th align="left" scope="col">Cycle 2</th><th align="left" scope="col">Cycle 3</th><th align="left" scope="col">Exam 1</th><th align="left" scope="col">Sem 1</th><th align="left" scope="col">Cycle 4</th><th align="left" scope="col">Cycle 5</th><th align="left" scope="col">Cycle 6</th><th align="left" scope="col">Exam 2</th><th align="left" scope="col">Sem 2</th></tr><tr class="DataRow">
+                <th align="left" scope="row" class="TeacherNameCell"><a href="mailto:TDAVENPORT@dallasisd.org" class="EmailLink">Davenport, Timothy</a></th><td align="left"><a href="StudentNotes.aspx?StudentID=3029912&amp;SchoolID=69&amp;TeacherID=80561&amp;TeacherName=Davenport%2c+Timothy" onclick="window.open(&#39;StudentNotes.aspx?StudentID=3029912&amp;SchoolID=69&amp;TeacherID=80561&amp;TeacherName=Davenport%2c+Timothy&#39;, &#39;Notes&#39;, &#39;width=720,height=480,scrollbars=yes,menubar=no,toolbar=no,resizable=yes,left=30,top=90&#39;); return false;" target="Notes">Note</a></td><td align="left">MS ART II STUDIO-3</td><td>1</td><td><a href="?data=MXwzMDI5OTEyfDgwNTYxfDg1MzF8M3w1NzkwNXw2OQ%3d%3d" class="Grade"  title="Teacher Davenport, Timothy Course MS ART II STUDIO-3 Period 1 Cycle 1 Grade 100">100</a></td><td><a href="?data=MnwzMDI5OTEyfDgwNTYxfDg1MzF8M3w1NzkwNXw2OQ%3d%3d" class="Grade"  title="Teacher Davenport, Timothy Course MS ART II STUDIO-3 Period 1 Cycle 2 Grade 96">96</a></td><td><a href="?data=M3wzMDI5OTEyfDgwNTYxfDg1MzF8M3w1NzkwNXw2OQ%3d%3d" class="Grade"  title="Teacher Davenport, Timothy Course MS ART II STUDIO-3 Period 1 Cycle 3 Grade 100">100</a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr class="DataRowAlt">
+                <th align="left" scope="row" class="TeacherNameCell"><a href="mailto:CGeiger@dallasisd.org" class="EmailLink">Geiger, Carl</a></th><td align="left"><a href="StudentNotes.aspx?StudentID=3029912&amp;SchoolID=69&amp;TeacherID=36135&amp;TeacherName=Geiger%2c+Carl" onclick="window.open(&#39;StudentNotes.aspx?StudentID=3029912&amp;SchoolID=69&amp;TeacherID=36135&amp;TeacherName=Geiger%2c+Carl&#39;, &#39;Notes&#39;, &#39;width=720,height=480,scrollbars=yes,menubar=no,toolbar=no,resizable=yes,left=30,top=90&#39;); return false;" target="Notes">Note</a></td><td align="left">TEXAS STUDIES 7-2</td><td>2</td><td><a href="?data=MXwzMDI5OTEyfDM2MTM1fDIwMDB8Mnw1NzkwNXw2OQ%3d%3d" class="Grade"  title="Teacher Geiger, Carl Course TEXAS STUDIES 7-2 Period 2 Cycle 1 Grade 83">83</a></td><td><a href="?data=MnwzMDI5OTEyfDM2MTM1fDIwMDB8Mnw1NzkwNXw2OQ%3d%3d" class="Grade"  title="Teacher Geiger, Carl Course TEXAS STUDIES 7-2 Period 2 Cycle 2 Grade 91">91</a></td><td><a href="?data=M3wzMDI5OTEyfDM2MTM1fDIwMDB8Mnw1NzkwNXw2OQ%3d%3d" class="Grade"  title="Teacher Geiger, Carl Course TEXAS STUDIES 7-2 Period 2 Cycle 3 Grade 103">103</a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr class="DataRow">
+                <th align="left" scope="row" class="TeacherNameCell"><a href="mailto:SHANWRIGHT@dallasisd.org" class="EmailLink">Wright, Shannon</a></th><td align="left"><a href="StudentNotes.aspx?StudentID=3029912&amp;SchoolID=69&amp;TeacherID=64406&amp;TeacherName=Wright%2c+Shannon" onclick="window.open(&#39;StudentNotes.aspx?StudentID=3029912&amp;SchoolID=69&amp;TeacherID=64406&amp;TeacherName=Wright%2c+Shannon&#39;, &#39;Notes&#39;, &#39;width=720,height=480,scrollbars=yes,menubar=no,toolbar=no,resizable=yes,left=30,top=90&#39;); return false;" target="Notes">Note</a></td><td align="left">SCIENCE 7-14</td><td>3</td><td><a href="?data=MXwzMDI5OTEyfDY0NDA2fDMwMTB8MTR8NTc5MDV8Njk%3d" class="Grade"  title="Teacher Wright, Shannon Course SCIENCE 7-14 Period 3 Cycle 1 Grade 96">96</a></td><td><a href="?data=MnwzMDI5OTEyfDY0NDA2fDMwMTB8MTR8NTc5MDV8Njk%3d" class="Grade"  title="Teacher Wright, Shannon Course SCIENCE 7-14 Period 3 Cycle 2 Grade 93">93</a></td><td><a href="?data=M3wzMDI5OTEyfDY0NDA2fDMwMTB8MTR8NTc5MDV8Njk%3d" class="Grade"  title="Teacher Wright, Shannon Course SCIENCE 7-14 Period 3 Cycle 3 Grade 99">99</a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr class="DataRowAlt">
+                <th align="left" scope="row" class="TeacherNameCell"><a href="mailto:GAWALLACE@dallasisd.org" class="EmailLink">Wallace, Gabrielle</a></th><td align="left"><a href="StudentNotes.aspx?StudentID=3029912&amp;SchoolID=69&amp;TeacherID=82457&amp;TeacherName=Wallace%2c+Gabrielle" onclick="window.open(&#39;StudentNotes.aspx?StudentID=3029912&amp;SchoolID=69&amp;TeacherID=82457&amp;TeacherName=Wallace%2c+Gabrielle&#39;, &#39;Notes&#39;, &#39;width=720,height=480,scrollbars=yes,menubar=no,toolbar=no,resizable=yes,left=30,top=90&#39;); return false;" target="Notes">Note</a></td><td align="left">READING 7-2 - B Lunch</td><td>4</td><td><a href="?data=MXwzMDI5OTEyfDgyNDU3fDEwMzB8Mnw1NzkwNXw2OQ%3d%3d" class="Grade"  title="Teacher Wallace, Gabrielle Course READING 7-2 - B Lunch Period 4 Cycle 1 Grade 88">88</a></td><td><a href="?data=MnwzMDI5OTEyfDgyNDU3fDEwMzB8Mnw1NzkwNXw2OQ%3d%3d" class="Grade"  title="Teacher Wallace, Gabrielle Course READING 7-2 - B Lunch Period 4 Cycle 2 Grade 89">89</a></td><td><a href="?data=M3wzMDI5OTEyfDgyNDU3fDEwMzB8Mnw1NzkwNXw2OQ%3d%3d" class="Grade"  title="Teacher Wallace, Gabrielle Course READING 7-2 - B Lunch Period 4 Cycle 3 Grade 87">87</a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr class="DataRow">
+                <th align="left" scope="row" class="TeacherNameCell"><a href="mailto:TJEFFRIES@dallasisd.org" class="EmailLink">Jeffries, Timothy</a></th><td align="left"><a href="StudentNotes.aspx?StudentID=3029912&amp;SchoolID=69&amp;TeacherID=83564&amp;TeacherName=Jeffries%2c+Timothy" onclick="window.open(&#39;StudentNotes.aspx?StudentID=3029912&amp;SchoolID=69&amp;TeacherID=83564&amp;TeacherName=Jeffries%2c+Timothy&#39;, &#39;Notes&#39;, &#39;width=720,height=480,scrollbars=yes,menubar=no,toolbar=no,resizable=yes,left=30,top=90&#39;); return false;" target="Notes">Note</a></td><td align="left">LCC 7-6 - A Lunch</td><td>5</td><td><a href="?data=MXwzMDI5OTEyfDgzNTY0fDQ3NTB8Nnw1NzkwNXw2OQ%3d%3d" class="Grade"  title="Teacher Jeffries, Timothy Course LCC 7-6 - A Lunch Period 5 Cycle 1 Grade 98">98</a></td><td><a href="?data=MnwzMDI5OTEyfDgzNTY0fDQ3NTB8Nnw1NzkwNXw2OQ%3d%3d" class="Grade"  title="Teacher Jeffries, Timothy Course LCC 7-6 - A Lunch Period 5 Cycle 2 Grade 94">94</a></td><td><a href="?data=M3wzMDI5OTEyfDgzNTY0fDQ3NTB8Nnw1NzkwNXw2OQ%3d%3d" class="Grade"  title="Teacher Jeffries, Timothy Course LCC 7-6 - A Lunch Period 5 Cycle 3 Grade 95">95</a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr class="DataRowAlt">
+                <th align="left" scope="row" class="TeacherNameCell"><a href="mailto:MKONIAK@dallasisd.org" class="EmailLink">Koniak, Matthew</a></th><td align="left"><a href="StudentNotes.aspx?StudentID=3029912&amp;SchoolID=69&amp;TeacherID=78648&amp;TeacherName=Koniak%2c+Matthew" onclick="window.open(&#39;StudentNotes.aspx?StudentID=3029912&amp;SchoolID=69&amp;TeacherID=78648&amp;TeacherName=Koniak%2c+Matthew&#39;, &#39;Notes&#39;, &#39;width=720,height=480,scrollbars=yes,menubar=no,toolbar=no,resizable=yes,left=30,top=90&#39;); return false;" target="Notes">Note</a></td><td align="left">MATH 7-18</td><td>6</td><td><a href="?data=MXwzMDI5OTEyfDc4NjQ4fDI1MDB8MTh8NTc5MDV8Njk%3d" class="Grade"  title="Teacher Koniak, Matthew Course MATH 7-18 Period 6 Cycle 1 Grade 94">94</a></td><td><a href="?data=MnwzMDI5OTEyfDc4NjQ4fDI1MDB8MTh8NTc5MDV8Njk%3d" class="Grade"  title="Teacher Koniak, Matthew Course MATH 7-18 Period 6 Cycle 2 Grade 92">92</a></td><td><a href="?data=M3wzMDI5OTEyfDc4NjQ4fDI1MDB8MTh8NTc5MDV8Njk%3d" class="Grade"  title="Teacher Koniak, Matthew Course MATH 7-18 Period 6 Cycle 3 Grade 100">100</a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr class="DataRow">
+                <th align="left" scope="row" class="TeacherNameCell"><a href="mailto:KEffiom@dallasisd.org" class="EmailLink">Sample-Effiom, Kim</a></th><td align="left"><a href="StudentNotes.aspx?StudentID=3029912&amp;SchoolID=69&amp;TeacherID=20020&amp;TeacherName=Sample-Effiom%2c+Kim" onclick="window.open(&#39;StudentNotes.aspx?StudentID=3029912&amp;SchoolID=69&amp;TeacherID=20020&amp;TeacherName=Sample-Effiom%2c+Kim&#39;, &#39;Notes&#39;, &#39;width=720,height=480,scrollbars=yes,menubar=no,toolbar=no,resizable=yes,left=30,top=90&#39;); return false;" target="Notes">Note</a></td><td align="left">SHLT READ LANG ARTS 7-9</td><td>7</td><td><a href="?data=MXwzMDI5OTEyfDIwMDIwfDExNzB8OXw1NzkwNXw2OQ%3d%3d" class="Grade"  title="Teacher Sample-Effiom, Kim Course SHLT READ LANG ARTS 7-9 Period 7 Cycle 1 Grade 90">90</a></td><td><a href="?data=MnwzMDI5OTEyfDIwMDIwfDExNzB8OXw1NzkwNXw2OQ%3d%3d" class="Grade"  title="Teacher Sample-Effiom, Kim Course SHLT READ LANG ARTS 7-9 Period 7 Cycle 2 Grade 84">84</a></td><td><a href="?data=M3wzMDI5OTEyfDIwMDIwfDExNzB8OXw1NzkwNXw2OQ%3d%3d" class="Grade"  title="Teacher Sample-Effiom, Kim Course SHLT READ LANG ARTS 7-9 Period 7 Cycle 3 Grade 86">86</a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></table>&nbsp;</P>
+
+
+            </td>
+
+        </tr>
+    </table>
+
+    <script language="javascript">
+        window.setTimeout('window.scroll(0,0);', 100);
+    </script></form>
+</body>
+</html>
