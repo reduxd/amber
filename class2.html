@@ -1,0 +1,162 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="_ctl0_Head"><title>
+	ParentConnection - Grades
+</title><meta content="JavaScript" name="vs_defaultClientScript"><meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema"><link href="StyleSheets/PCMaster.css" type="text/css" rel="stylesheet" />
+   <script language="javascript">
+   <!--
+      function getDocumentElementById(elementID){
+         if (document.getElementById){
+            return document.getElementById(elementID);
+         }else{
+            if (document.all){
+               return document.all(elementID);
+            }else{
+               if (document.layers){
+                  return document.layers(elementID);
+               }else{
+		            return eval('document.forms[0].' + elementID);
+               }
+            }
+         }
+      }
+
+      function __RunPostBack(eventTarget, eventArgument, eventArgument2) {
+         var theform;
+         //if (window.navigator.appName.toLowerCase().indexOf("netscape") > -1) {
+         //   theform = document.forms["Form1"];
+         //}else {
+         //   theform = document.Form1;
+         //}
+         theform = document.forms[0];
+         theform.__RUNEVENTTARGET.value = eventTarget.split("$").join(":");
+         theform.__RUNEVENTARGUMENT.value = eventArgument;
+         theform.__RUNEVENTARGUMENT2.value = eventArgument2;
+         theform.submit();
+      }
+// --></script>
+</head>
+<body id="_ctl0_documentBody">
+   <form name="aspnetForm" method="post" action="ParentStudentGrades.aspx?data=M3wyMTI5MjM3fDYxNjI3fDI4OTd8NXw1NzkwNXw0MQ%3d%3d" id="aspnetForm">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTkwNTg4MzgyMg9kFgJmD2QWBAIBD2QWAgIDDxYCHgRUZXh0BUk8bGluayBocmVmPSJTdHlsZVNoZWV0cy9QQ01hc3Rlci5jc3MiIHR5cGU9InRleHQvY3NzIiByZWw9InN0eWxlc2hlZXQiIC8+ZAIDD2QWAgIBD2QWBgIBD2QWAmYPFgQeB2NvbHNwYW4FATIeCWlubmVyaHRtbAUWJm5ic3A7UGFyZW50Q29ubmVjdGlvbmQCAw9kFhACAQ8WAh8ABTM8aW1nIHNyYz0iR2V0RmlsZS5hc3B4P2RzdHI9NTc5MDUmYW1wO2Rlc2M9TG9nbyIgLz5kAgMPFgIfAAUNRGFsbGFzIEkuUy5ELmQCBQ8WAh8ABSA8YnIgLz4wNDEgVG93bnZpZXcgTWFnbmV0IENlbnRlcmQCCQ8QZBAVAhNNYXJ0aW5leiwgR3VhZGFsdXBlEE1hcnRpbmV6LCBJdHphZWwVAgczMDI5OTEyBzIxMjkyMzcUKwMCZ2cWAQIBZAINDw8WAh4HVmlzaWJsZWhkZAIRDxYCHwAF5QcgICAgICAgICAgICAgICA8dWwgY2xhc3M9Ik5hdkJhckxpbmtzIj4NCiAgICAgICAgICAgICAgICAgIDxsaSBpZD0ibG5rSG9tZUJ1bGxldCI+PGEgaHJlZj0iUGFyZW50TWFpbi5hc3B4IiBpZD0ibG5rSG9tZSI+SG9tZTwvYT48L2xpPg0KICAgICAgICAgICAgICAgICAgPGxpIGlkPSJsbmtBc3NpZ25tZW50c0J1bGxldCI+PGEgaHJlZj0iUGFyZW50QXNzaWdubWVudHMuYXNweCIgaWQ9Imxua0Fzc2lnbm1lbnRzIj5Bc3NpZ25tZW50czwvYT48L2xpPg0KICAgICAgICAgICAgICAgICAgPGxpIGlkPSJsbmtHcmFkZXNCdWxsZXQiPjxhIGhyZWY9IlBhcmVudFN0dWRlbnRHcmFkZXMuYXNweCIgaWQ9Imxua0dyYWRlcyI+R3JhZGVzPC9hPjwvbGk+DQogICAgICAgICAgICAgICAgICA8bGkgaWQ9Imxua0F0dGVuZGFuY2VCdWxsZXQiPjxhIGhyZWY9IlBhcmVudFN0dWRlbnRBdHRlbmQuYXNweCIgaWQ9Imxua0F0dGVuZGFuY2UiPkF0dGVuZGFuY2U8L2E+PC9saT4NCiAgICAgICAgICAgICAgICAgIDxsaSBpZD0ibG5rVHJpZ2dlcnNCdWxsZXQiPjxhIGhyZWY9IlBhcmVudE1hbmFnZVRyaWdnZXJzLmFzcHgiIGlkPSJsbmtUcmlnZ2VycyI+VHJpZ2dlcnM8L2E+PC9saT4NCiAgICAgICAgICAgICAgICAgIDxsaSBpZD0ibG5rQ2FsZW5kYXJCdWxsZXQiPjxhIGhyZWY9IlBhcmVudENhbGVuZGFyLmFzcHgiIGlkPSJsbmtDYWxlbmRhciI+Q2FsZW5kYXI8L2E+PC9saT4NCiAgICAgICAgICAgICAgICAgIDxsaSBpZD0ibG5rTWFuYWdlU3R1ZGVudHNCdWxsZXQiPjxhIGhyZWY9IlBhcmVudE1hbmFnZVN0dWRlbnRzLmFzcHgiIGlkPSJsbmtNYW5hZ2VTdHVkZW50cyI+TWFuYWdlIFN0dWRlbnRzPC9hPjwvbGk+DQogICAgICAgICAgICAgICAgICA8bGkgaWQ9Imxua015U2V0dGluZ3NCdWxsZXQiPjxhIGhyZWY9IlBhcmVudE15U2V0dGluZ3MuYXNweCIgaWQ9Imxua015U2V0dGluZ3MiPk15IFNldHRpbmdzPC9hPjwvbGk+DQogICAgICAgICAgICAgICA8L3VsPg0KZAIVDw8WAh8ABQZyZWR1eGRkZAIZDxYCHwAFnAROdW1lcmljYWwgR3JhZGUgUmFuZ2VzOjxCUj45MC0xMDAgPSBBPEJSPjgwLTg5ID0gQjxCUj43NS03OSA9IEM8QlI+NzAtNzQgPSBEPEJSPkJlbG93IDcwCUZhaWxpbmc8QlI+SSA9IEluY29tcGxldGUgKG11c3QgYmUgbWFkZSB1cCB3aXRoaW4gYSByZWFzb25hYmxlIHBlcmlvZCBvZiB0aW1lKTxQPjxCUj5SZXBvcnQgQ2FyZCBHcmFkZXMgZm9yIFByZS1LLCBLaW5kZXIsIGFuZCAxc3QgR3JhZGU8QlI+RT0gRXhjZWxsZW5jZS9Db25zaXN0ZW50IFByb2dyZXNzPEJSPlMgPSBTYXRpc2ZhY3RvcnkgUHJvZ3Jlc3M8QlI+TiA9IE5lZWRzIEltcHJvdmVtZW50L0FkZGl0aW9uYWwgVGltZSBmb3IgTGVhcm5pbmc8UD48IS0tPEJSPjx0YWJsZSBib3JkZXI9MSBjZWxscGFkZGluZz0xMCBhbGlnbj1jZW50ZXI+PHRyPjx0ZD48QlI+Rm91cnRoIGdyYWRlIEFydCBBQ1AgZXhhbSBzY29yZSBpcyBkaXNwbGF5ZWQsPEJSPmJ1dCBOT1QgY2FsY3VsYXRlZCBhcyBwYXJ0IG9mIHRoZSBzZW1lc3RlciBhdmVyYWdlLjxQPjwvdGQ+PC90cj48L3RhYmxlPjxCUj4tLT5kAgUPFgQeBWFsaWduBQRsZWZ0HgVjbGFzcwUPTWFpbkNvbnRlbnRMZWZ0FgICAQ9kFgICAw8WAh8ABckBSWYgYW55IGdyYWRlIG9yIGF0dGVuZGFuY2UgZGlzY3JlcGFuY2llcyBvY2N1ciBiZXR3ZWVuIHRoZSByZXBvcnQgY2FyZCBhbmQgUGFyZW50IFBvcnRhbCwgdGhlIHJlcG9ydCBjYXJkIHByaW50ZWQgZnJvbSB0aGUgZGlzdHJpY3TigJlzIHN0dWRlbnQgaW5mb3JtYXRpb24gc3lzdGVtIGlzIHRoZSBvZmZpY2lhbCByZWNvcmQgb2YgdGhlIHN0dWRlbnQuZGTZxG6RUBd9uvR4+1k+4S7VSROHBg==" />
+
+<script type="text/javascript">
+<!--
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+// -->
+</script>
+
+
+<script language="Javascript">
+window.onscroll = function(){
+   saveScrollParameters();}
+
+function saveScrollParameters(){
+   getScrollDocumentElement('__scrollLeft').value = document.body.scrollLeft + '';
+   getScrollDocumentElement('__scrollTop').value = document.body.scrollTop + '';
+   window.status = 'scroll ' + document.body.scrollLeft + ', ' + document.body.scrollTop;}
+
+function getScrollDocumentElement(elementID){
+   if (document.getElementById){
+      return document.getElementById(elementID);
+   }else{
+      if (document.all){
+         return document.all(elementID);
+      }else{
+         if (document.layers){
+            return document.layers(elementID);
+         }
+      }
+   }
+}
+</script><input type="hidden" name="__scrollLeft" id="__scrollLeft" value="0"><input type="hidden" name="__scrollTop" id="__scrollTop" value="0">
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="98F018D0" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAVaNeF4gDjLRxlNNRBTZfYUojOXOmZFSkIQtr6XoxQpNG58G7mNgvbJr59qc2oPRbHh3D4ui3uf1UUugKO79rQdt2FPU0mSOT1zdALEQzvrxYQRd00EepnYidUm6KLWNJ4IDTWN" />
+      <input type="hidden" name="__RUNEVENTTARGET" />
+      <input type="hidden" name="__RUNEVENTARGUMENT" />
+      <input type="hidden" name="__RUNEVENTARGUMENT2" />
+      <table border="0" cellspacing="0" cellpadding="0" class="MainTable">
+        <tr class="Banner">
+            <td colspan="2"></td>
+        </tr>
+         <tr id="_ctl0_trTitleBar" class="TitleBar">
+	<td id="_ctl0_tdTitleBar" colspan="2">&nbsp;ParentConnection</td>
+</tr>
+
+         <tr>
+            <td id="_ctl0_tdNavBar" class="NavBar">
+               <img src="GetFile.aspx?dstr=57905&amp;desc=Logo" />
+               <p class="DistrictName">
+                  Dallas I.S.D.
+                  <span class="NormalFontWeight"><br />041 Townview Magnet Center</span>
+                </p>
+               <span id="_ctl0_lblStudentHeader" class="CurrentStudent">Current Student:</span><br />
+               <select name="_ctl0:ddlStudents" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;_ctl0$ddlStudents\&#39;,\&#39;\&#39;)&#39;, 0)" language="javascript" id="_ctl0_ddlStudents">
+	<option value="3029912">Martinez, Guadalupe</option>
+	<option selected="selected" value="2129237">Martinez, Itzael</option>
+
+</select>
+               <noscript>
+                  <input type="submit" name="_ctl0:btnSwitchStudent" value="OK" id="_ctl0_btnSwitchStudent" /></noscript>
+               <br />
+               &nbsp;<br />
+               Select a section:
+                              <ul class="NavBarLinks">
+                  <li id="lnkHomeBullet"><a href="ParentMain.aspx" id="lnkHome">Home</a></li>
+                  <li id="lnkAssignmentsBullet"><a href="ParentAssignments.aspx" id="lnkAssignments">Assignments</a></li>
+                  <li id="lnkGradesBullet"><a href="ParentStudentGrades.aspx" id="lnkGrades">Grades</a></li>
+                  <li id="lnkAttendanceBullet"><a href="ParentStudentAttend.aspx" id="lnkAttendance">Attendance</a></li>
+                  <li id="lnkTriggersBullet"><a href="ParentManageTriggers.aspx" id="lnkTriggers">Triggers</a></li>
+                  <li id="lnkCalendarBullet"><a href="ParentCalendar.aspx" id="lnkCalendar">Calendar</a></li>
+                  <li id="lnkManageStudentsBullet"><a href="ParentManageStudents.aspx" id="lnkManageStudents">Manage Students</a></li>
+                  <li id="lnkMySettingsBullet"><a href="ParentMySettings.aspx" id="lnkMySettings">My Settings</a></li>
+               </ul>
+
+               <br />
+               <p class="CurrentUser">
+                  You are currently logged in as 
+                  <span id="_ctl0_lblParentCurrUser" class="UserName">reduxd</span>.
+               </p>
+               <p id="_ctl0_lblParentLogout" class="LogOut">
+                  [<a href="Logout.aspx">Log Out</a>]
+               </p>
+               Numerical Grade Ranges:<BR>90-100 = A<BR>80-89 = B<BR>75-79 = C<BR>70-74 = D<BR>Below 70	Failing<BR>I = Incomplete (must be made up within a reasonable period of time)<P><BR>Report Card Grades for Pre-K, Kinder, and 1st Grade<BR>E= Excellence/Consistent Progress<BR>S = Satisfactory Progress<BR>N = Needs Improvement/Additional Time for Learning<P><!--<BR><table border=1 cellpadding=10 align=center><tr><td><BR>Fourth grade Art ACP exam score is displayed,<BR>but NOT calculated as part of the semester average.<P></td></tr></table><BR>-->
+            </td>
+
+            <td id="_ctl0_tdMainContent" align="left" class="MainContentLeft">
+               
+   <span class="PageHeader">Student Grades</span>
+   <p class="PageNote">If any grade or attendance discrepancies occur between the report card and Parent Portal, the report card printed from the district’s student information system is the official record of the student.</p>
+   <P><div class="StudentHeader"><span class="StudentName">Martinez, Itzael</span> (041 Townview Magnet Center)</div><table border="0" cellspacing="0" cellpadding="3" class="DataTable"><tr class="TableHeader"><th align="left" scope="col">Teacher</th><th align="left" scope="col">Notes</th><th align="left" scope="col">Course</th><th align="left" scope="col">Period</th><th align="left" scope="col">Cycle 1</th><th align="left" scope="col">Cycle 2</th><th align="left" scope="col">Cycle 3</th><th align="left" scope="col">Exam 1</th><th align="left" scope="col">Sem 1</th><th align="left" scope="col">Cycle 4</th><th align="left" scope="col">Cycle 5</th><th align="left" scope="col">Cycle 6</th><th align="left" scope="col">Exam 2</th><th align="left" scope="col">Sem 2</th></tr><tr class="DataRow">
+<th align="left" scope="row" class="TeacherNameCell"><a href="mailto:CBOYKIN@dallasisd.org" class="EmailLink">Boykin, Calvin</a></th><td align="left"><a href="StudentNotes.aspx?StudentID=2129237&amp;SchoolID=41&amp;TeacherID=56607&amp;TeacherName=Boykin%2c+Calvin" onclick="window.open(&#39;StudentNotes.aspx?StudentID=2129237&amp;SchoolID=41&amp;TeacherID=56607&amp;TeacherName=Boykin%2c+Calvin&#39;, &#39;Notes&#39;, &#39;width=720,height=480,scrollbars=yes,menubar=no,toolbar=no,resizable=yes,left=30,top=90&#39;); return false;" target="Notes">Note</a></td><td align="left">ENGDSPR-1</td><td>1</td><td><a href="?data=MXwyMTI5MjM3fDU2NjA3fDcxNzh8MXw1NzkwNXw0MQ%3d%3d" class="Grade"  title="Teacher Boykin, Calvin Course ENGDSPR-1 Period 1 Cycle 1 Grade 70">70</a></td><td><a href="?data=MnwyMTI5MjM3fDU2NjA3fDcxNzh8MXw1NzkwNXw0MQ%3d%3d" class="Grade"  title="Teacher Boykin, Calvin Course ENGDSPR-1 Period 1 Cycle 2 Grade 70">70</a></td><td><a href="?data=M3wyMTI5MjM3fDU2NjA3fDcxNzh8MXw1NzkwNXw0MQ%3d%3d" class="Grade"  title="Teacher Boykin, Calvin Course ENGDSPR-1 Period 1 Cycle 3 Grade 70">70</a></td><td><span class="Grade" title="Teacher Boykin, Calvin Course ENGDSPR-1 Period 1 Semester 1 Exam 87">87</span></td><td><span class="Grade" title="Teacher Boykin, Calvin Course ENGDSPR-1 Period 1 Semester 1 Grade 73">73</span></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr class="DataRowAlt">
+<th align="left" scope="row" class="TeacherNameCell"><a href="mailto:DDOVE041@dallasisd.org" class="EmailLink">Dove, Deanna</a></th><td align="left"><a href="StudentNotes.aspx?StudentID=2129237&amp;SchoolID=41&amp;TeacherID=12298&amp;TeacherName=Dove%2c+Deanna" onclick="window.open(&#39;StudentNotes.aspx?StudentID=2129237&amp;SchoolID=41&amp;TeacherID=12298&amp;TeacherName=Dove%2c+Deanna&#39;, &#39;Notes&#39;, &#39;width=720,height=480,scrollbars=yes,menubar=no,toolbar=no,resizable=yes,left=30,top=90&#39;); return false;" target="Notes">Note</a></td><td align="left">AP U S HIST-13</td><td>2</td><td><a href="?data=MXwyMTI5MjM3fDEyMjk4fDI0NTB8MTN8NTc5MDV8NDE%3d" class="Grade"  title="Teacher Dove, Deanna Course AP U S HIST-13 Period 2 Cycle 1 Grade 72">72</a></td><td><a href="?data=MnwyMTI5MjM3fDEyMjk4fDI0NTB8MTN8NTc5MDV8NDE%3d" class="Grade"  title="Teacher Dove, Deanna Course AP U S HIST-13 Period 2 Cycle 2 Grade 80">80</a></td><td><a href="?data=M3wyMTI5MjM3fDEyMjk4fDI0NTB8MTN8NTc5MDV8NDE%3d" class="Grade"  title="Teacher Dove, Deanna Course AP U S HIST-13 Period 2 Cycle 3 Grade 90">90</a></td><td><span class="Grade" title="Teacher Dove, Deanna Course AP U S HIST-13 Period 2 Semester 1 Exam 99">99</span></td><td><span class="Grade" title="Teacher Dove, Deanna Course AP U S HIST-13 Period 2 Semester 1 Grade 83">83</span></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr class="DataRow">
+<th align="left" scope="row" class="TeacherNameCell"><a href="mailto:AAshmead@dallasisd.org" class="EmailLink">Ashmead, Amanda</a></th><td align="left"><a href="StudentNotes.aspx?StudentID=2129237&amp;SchoolID=41&amp;TeacherID=48396&amp;TeacherName=Ashmead%2c+Amanda" onclick="window.open(&#39;StudentNotes.aspx?StudentID=2129237&amp;SchoolID=41&amp;TeacherID=48396&amp;TeacherName=Ashmead%2c+Amanda&#39;, &#39;Notes&#39;, &#39;width=720,height=480,scrollbars=yes,menubar=no,toolbar=no,resizable=yes,left=30,top=90&#39;); return false;" target="Notes">Note</a></td><td align="left">AP ENGLISH III-23</td><td>4</td><td><a href="?data=MXwyMTI5MjM3fDQ4Mzk2fDE1MTV8MjN8NTc5MDV8NDE%3d" class="Grade"  title="Teacher Ashmead, Amanda Course AP ENGLISH III-23 Period 4 Cycle 1 Grade 78">78</a></td><td><a href="?data=MnwyMTI5MjM3fDQ4Mzk2fDE1MTV8MjN8NTc5MDV8NDE%3d" class="Grade"  title="Teacher Ashmead, Amanda Course AP ENGLISH III-23 Period 4 Cycle 2 Grade 70">70</a></td><td><a href="?data=M3wyMTI5MjM3fDQ4Mzk2fDE1MTV8MjN8NTc5MDV8NDE%3d" class="Grade"  title="Teacher Ashmead, Amanda Course AP ENGLISH III-23 Period 4 Cycle 3 Grade 85">85</a>&nbsp;<a href="?data=M3wyMTI5MjM3fDQ4Mzk2fDE1MTV8MjN8NTc5MDV8NDE%3d&amp;MissingAssignments=1" class="Grade" title="Number of missing assignments">(1)</a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr class="DataRowAlt">
+<th align="left" scope="row" class="TeacherNameCell"><a href="mailto:MTurmelle@DallasISD.Org" class="EmailLink">Turmelle, Marilyn</a></th><td align="left"><a href="StudentNotes.aspx?StudentID=2129237&amp;SchoolID=41&amp;TeacherID=68094&amp;TeacherName=Turmelle%2c+Marilyn" onclick="window.open(&#39;StudentNotes.aspx?StudentID=2129237&amp;SchoolID=41&amp;TeacherID=68094&amp;TeacherName=Turmelle%2c+Marilyn&#39;, &#39;Notes&#39;, &#39;width=720,height=480,scrollbars=yes,menubar=no,toolbar=no,resizable=yes,left=30,top=90&#39;); return false;" target="Notes">Note</a></td><td align="left">COMPPROG-1</td><td>5</td><td><a href="?data=MXwyMTI5MjM3fDY4MDk0fDczMTN8MXw1NzkwNXw0MQ%3d%3d" class="Grade"  title="Teacher Turmelle, Marilyn Course COMPPROG-1 Period 5 Cycle 1 Grade 95">95</a></td><td><a href="?data=MnwyMTI5MjM3fDY4MDk0fDczMTN8MXw1NzkwNXw0MQ%3d%3d" class="Grade"  title="Teacher Turmelle, Marilyn Course COMPPROG-1 Period 5 Cycle 2 Grade 89">89</a></td><td><a href="?data=M3wyMTI5MjM3fDY4MDk0fDczMTN8MXw1NzkwNXw0MQ%3d%3d" class="Grade"  title="Teacher Turmelle, Marilyn Course COMPPROG-1 Period 5 Cycle 3 Grade 76">76</a></td><td><span class="Grade" title="Teacher Turmelle, Marilyn Course COMPPROG-1 Period 5 Semester 1 Exam 75">75</span></td><td><span class="Grade" title="Teacher Turmelle, Marilyn Course COMPPROG-1 Period 5 Semester 1 Grade 85">85</span></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr class="DataRow">
+<th align="left" scope="row" class="TeacherNameCell"><a href="mailto:JOSNEWTON@dallasisd.org" class="EmailLink">Newton, Joshua</a></th><td align="left"><a href="StudentNotes.aspx?StudentID=2129237&amp;SchoolID=41&amp;TeacherID=61627&amp;TeacherName=Newton%2c+Joshua" onclick="window.open(&#39;StudentNotes.aspx?StudentID=2129237&amp;SchoolID=41&amp;TeacherID=61627&amp;TeacherName=Newton%2c+Joshua&#39;, &#39;Notes&#39;, &#39;width=720,height=480,scrollbars=yes,menubar=no,toolbar=no,resizable=yes,left=30,top=90&#39;); return false;" target="Notes">Note</a></td><td align="left">AP CALCULUS BC-5</td><td>7</td><td><a href="?data=MXwyMTI5MjM3fDYxNjI3fDI4OTd8NXw1NzkwNXw0MQ%3d%3d" class="Grade"  title="Teacher Newton, Joshua Course AP CALCULUS BC-5 Period 7 Cycle 1 Grade 62">62</a></td><td><a href="?data=MnwyMTI5MjM3fDYxNjI3fDI4OTd8NXw1NzkwNXw0MQ%3d%3d" class="Grade"  title="Teacher Newton, Joshua Course AP CALCULUS BC-5 Period 7 Cycle 2 Grade 67">67</a></td><td><a href="?data=M3wyMTI5MjM3fDYxNjI3fDI4OTd8NXw1NzkwNXw0MQ%3d%3d" class="Grade"  title="Teacher Newton, Joshua Course AP CALCULUS BC-5 Period 7 Cycle 3 Grade 69">69</a>&nbsp;<a href="?data=M3wyMTI5MjM3fDYxNjI3fDI4OTd8NXw1NzkwNXw0MQ%3d%3d&amp;MissingAssignments=1" class="Grade" title="Number of missing assignments">(3)</a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr class="DataRowAlt">
+<th align="left" scope="row" class="TeacherNameCell"><a href="mailto:DMCLODA@dallasisd.org" class="EmailLink">McLoda, David</a></th><td align="left"><a href="StudentNotes.aspx?StudentID=2129237&amp;SchoolID=41&amp;TeacherID=26915&amp;TeacherName=McLoda%2c+David" onclick="window.open(&#39;StudentNotes.aspx?StudentID=2129237&amp;SchoolID=41&amp;TeacherID=26915&amp;TeacherName=McLoda%2c+David&#39;, &#39;Notes&#39;, &#39;width=720,height=480,scrollbars=yes,menubar=no,toolbar=no,resizable=yes,left=30,top=90&#39;); return false;" target="Notes">Note</a></td><td align="left">AP ENV SCIENCE-13</td><td>8</td><td><a href="?data=MXwyMTI5MjM3fDI2OTE1fDMxMTV8MTN8NTc5MDV8NDE%3d" class="Grade"  title="Teacher McLoda, David Course AP ENV SCIENCE-13 Period 8 Cycle 1 Grade 75">75</a></td><td><a href="?data=MnwyMTI5MjM3fDI2OTE1fDMxMTV8MTN8NTc5MDV8NDE%3d" class="Grade"  title="Teacher McLoda, David Course AP ENV SCIENCE-13 Period 8 Cycle 2 Grade 91">91</a></td><td><a href="?data=M3wyMTI5MjM3fDI2OTE1fDMxMTV8MTN8NTc5MDV8NDE%3d" class="Grade"  title="Teacher McLoda, David Course AP ENV SCIENCE-13 Period 8 Cycle 3 Grade 78">78</a></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></table>&nbsp;</P>
+   <h3 class="ClassName">AP CALCULUS BC-5 (Period 7)</h3><p class="CurrentAverage">Current Average: 69</p><span class="CategoryName">Classwork/Homework - 40%</span><br /><table border="0" cellspacing="0" cellpadding="3" class="DataTable"><tr class="TableHeader"><th class="AssignmentName" scope="col" align="left">Assignment</th><th class="DateAssigned" scope="col" align="left">Assigned</th><th class="DateDue" scope="col" align="left">Due</th><th class="AssignmentGrade" scope="col" align="left">Grade</th><th class="AssignmentNote" scope="col" align="left">Note</th><th>&nbsp;</th></tr><tr class="DataRow"><td class="AssignmentName">Quick Quiz #18</td><td class="DateAssigned">Nov-11</td><td class="DateDue">Nov-11</td><td class="AssignmentGrade">100</td><td class="AssignmentNote"></td><td>&nbsp;</td></tr><tr class="DataRowAlt"><td class="AssignmentName">Multiple Choice Quiz #18</td><td class="DateAssigned">Nov-11</td><td class="DateDue">Nov-11</td><td class="AssignmentGrade">70</td><td class="AssignmentNote"></td><td>&nbsp;</td></tr><tr class="DataRow"><td class="AssignmentName">AP Calculus Prep Session</td><td class="DateAssigned">Nov-21</td><td class="DateDue">Nov-21</td><td class="AssignmentGrade"></td><td class="AssignmentNote"></td><td>&nbsp;</td></tr><tr class="DataRowAlt"><td class="AssignmentName">Quick Quiz #20</td><td class="DateAssigned">Nov-23</td><td class="DateDue">Nov-23</td><td class="AssignmentGrade">50</td><td class="AssignmentNote"> (Dropped)</td><td>&nbsp;</td></tr><tr class="DataRow"><td class="AssignmentName">Quiz #2</td><td class="DateAssigned">Nov-23</td><td class="DateDue">Nov-23</td><td class="AssignmentGrade">85</td><td class="AssignmentNote"></td><td>&nbsp;</td></tr><tr class="DataRowAlt"><td class="AssignmentName">Quick Quiz #21</td><td class="DateAssigned">Dec-02</td><td class="DateDue">Dec-02</td><td class="AssignmentGrade"></td><td class="AssignmentNote"></td><td>&nbsp;</td></tr><tr class="DataRow"><td class="AssignmentName">Multiple Choice Quiz #21</td><td class="DateAssigned">Dec-02</td><td class="DateDue">Dec-02</td><td class="AssignmentGrade">60</td><td class="AssignmentNote"></td><td>&nbsp;</td></tr><tr class="DataRowAlt"><td class="AssignmentName">Homework #21 Quiz</td><td class="DateAssigned">Dec-04</td><td class="DateDue">Dec-04</td><td class="AssignmentGrade">88</td><td class="AssignmentNote"></td><td>&nbsp;</td></tr><tr class="DataRow"><td class="AssignmentName">Quick Quiz #22</td><td class="DateAssigned">Dec-04</td><td class="DateDue">Dec-04</td><td class="AssignmentGrade">55</td><td class="AssignmentNote"></td><td>&nbsp;</td></tr><tr class="DataRowAlt"><td class="AssignmentName">Quick Quiz #22a</td><td class="DateAssigned">Dec-08</td><td class="DateDue">Dec-08</td><td class="AssignmentGrade">75</td><td class="AssignmentNote"></td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>Average</td><td>76.14</td><td>&nbsp;</td></tr></table><span class="spacer">&nbsp;<br /></span><span class="CategoryName">Other - 0%</span><br /><table border="0" cellspacing="0" cellpadding="3" class="DataTable"><tr class="TableHeader"><th class="AssignmentName" scope="col" align="left">Assignment</th><th class="DateAssigned" scope="col" align="left">Assigned</th><th class="DateDue" scope="col" align="left">Due</th><th class="AssignmentGrade" scope="col" align="left">Grade</th><th class="AssignmentNote" scope="col" align="left">Note</th><th>&nbsp;</th></tr><tr class="DataRow"><td class="AssignmentName">Homework #18 (completion)</td><td class="DateAssigned">Nov-10</td><td class="DateDue">Nov-19</td><td class="AssignmentGrade">100</td><td class="AssignmentNote"></td><td>&nbsp;</td></tr><tr class="DataRowAlt"><td class="AssignmentName">Homework #19 (completion)</td><td class="DateAssigned">Nov-17</td><td class="DateDue">Nov-19</td><td class="AssignmentGrade"><del>0</del></td><td class="AssignmentNote"> (Missing)</td><td>&nbsp;</td></tr><tr class="DataRow"><td class="AssignmentName">Homework #20 (completion)</td><td class="DateAssigned">Nov-19</td><td class="DateDue">Nov-23</td><td class="AssignmentGrade">100</td><td class="AssignmentNote"></td><td>&nbsp;</td></tr><tr class="DataRowAlt"><td class="AssignmentName">Homework After Test 1</td><td class="DateAssigned">Nov-30</td><td class="DateDue">Dec-02</td><td class="AssignmentGrade">100</td><td class="AssignmentNote"></td><td>&nbsp;</td></tr><tr class="DataRow"><td class="AssignmentName">Homework #21 (completion)</td><td class="DateAssigned">Dec-02</td><td class="DateDue">Dec-04</td><td class="AssignmentGrade"><del>0</del></td><td class="AssignmentNote"> (Missing)</td><td>&nbsp;</td></tr><tr class="DataRowAlt"><td class="AssignmentName">Homework #22 (completion)</td><td class="DateAssigned">Dec-04</td><td class="DateDue">Dec-08</td><td class="AssignmentGrade"><del>0</del></td><td class="AssignmentNote"> (Missing)</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>Average</td><td>50</td><td>&nbsp;</td></tr></table><span class="spacer">&nbsp;<br /></span><span class="CategoryName">Projects/Products - 20%</span><br /><table border="0" cellspacing="0" cellpadding="3" class="DataTable"><tr class="TableHeader"><th class="AssignmentName" scope="col" align="left">Assignment</th><th class="DateAssigned" scope="col" align="left">Assigned</th><th class="DateDue" scope="col" align="left">Due</th><th class="AssignmentGrade" scope="col" align="left">Grade</th><th class="AssignmentNote" scope="col" align="left">Note</th><th>&nbsp;</th></tr><tr class="DataRow"><td class="AssignmentName">Project 1</td><td class="DateAssigned">Nov-30</td><td class="DateDue">Nov-30</td><td class="AssignmentGrade">62</td><td class="AssignmentNote"></td><td>&nbsp;</td></tr><tr class="DataRowAlt"><td class="AssignmentName">Project 2</td><td class="DateAssigned">Dec-10</td><td class="DateDue">Dec-10</td><td class="AssignmentGrade">62</td><td class="AssignmentNote"></td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>Average</td><td>62</td><td>&nbsp;</td></tr></table><span class="spacer">&nbsp;<br /></span><span class="CategoryName">Six-Week Test Grade - 15%</span><br /><table border="0" cellspacing="0" cellpadding="3" class="DataTable"><tr class="TableHeader"><th class="AssignmentName" scope="col" align="left">Assignment</th><th class="DateAssigned" scope="col" align="left">Assigned</th><th class="DateDue" scope="col" align="left">Due</th><th class="AssignmentGrade" scope="col" align="left">Grade</th><th class="AssignmentNote" scope="col" align="left">Note</th><th>&nbsp;</th></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>Average</td><td>--</td><td>&nbsp;</td></tr></table><span class="spacer">&nbsp;<br /></span><span class="CategoryName">Tests - 25%</span><br /><table border="0" cellspacing="0" cellpadding="3" class="DataTable"><tr class="TableHeader"><th class="AssignmentName" scope="col" align="left">Assignment</th><th class="DateAssigned" scope="col" align="left">Assigned</th><th class="DateDue" scope="col" align="left">Due</th><th class="AssignmentGrade" scope="col" align="left">Grade</th><th class="AssignmentNote" scope="col" align="left">Note</th><th>&nbsp;</th></tr><tr class="DataRow"><td class="AssignmentName">Test 1</td><td class="DateAssigned">Nov-30</td><td class="DateDue">Nov-30</td><td class="AssignmentGrade">62</td><td class="AssignmentNote"></td><td>&nbsp;</td></tr><tr class="DataRowAlt"><td class="AssignmentName">Test 2</td><td class="DateAssigned">Dec-10</td><td class="DateDue">Dec-10</td><td class="AssignmentGrade">62</td><td class="AssignmentNote"></td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>Average</td><td>62</td><td>&nbsp;</td></tr></table><span class="spacer">&nbsp;<br /></span>
+  
+            </td>
+
+         </tr>
+      </table>
+   
+<script language="javascript">
+   window.setTimeout('window.scroll(0,0);', 100);
+</script></form>
+</body>
+</html>

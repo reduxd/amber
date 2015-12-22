@@ -6,8 +6,6 @@ import org.jsoup.select.*;
  */
 public class Course {
 
-    private Element courseDocument;
-
     private String teacherName;
     private String teacherEmail;
     private String notesUrl;
@@ -27,9 +25,7 @@ public class Course {
     private generalCycle semesterTwo;
 
     public Course(Element source) {
-        courseDocument = source;
-
-        Elements rowColumns = courseDocument.children();
+        Elements rowColumns = source.children();
 
         teacherName = rowColumns.select(".EmailLink").text();
         teacherEmail = rowColumns.select(".EmailLink").attr("href").substring(7);
@@ -115,9 +111,11 @@ public class Course {
 
 class gradeCycle {
 
-    private double cycleGrade;
+    private String cycleGrade;
     private String cycleUrl;
     private String missingUrl;
+
+    private CourseData cycleData;
 
     public gradeCycle(Element cycleData) {
         if (!(cycleData.children().size() == 0)) {
@@ -126,12 +124,16 @@ class gradeCycle {
                 missingUrl = cycleData.child(1).attr("href");
             }
 
-            cycleGrade = Double.valueOf(cycleData.child(0).text());
+            cycleGrade = cycleData.child(0).text();
             cycleUrl = cycleData.child(0).attr("href");
         }
     }
 
-    public double getCycleGrade() {
+    public void setCycleData(String rawData) {
+        cycleData = new CourseData(rawData);
+    }
+
+    public String getCycleGrade() {
         return cycleGrade;
     }
 
@@ -143,14 +145,18 @@ class gradeCycle {
         return missingUrl;
     }
 
+    public CourseData getCycleData() {
+        return cycleData;
+    }
+
 }
 
 class generalCycle {
-    private double cycleGrade;
+    private String cycleGrade;
 
     public generalCycle(Element cycleData) {
         if (cycleData.text().length() == 0) {
-            cycleGrade = Double.valueOf(cycleData.text());
+            cycleGrade = cycleData.text();
         }
     }
 }

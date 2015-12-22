@@ -15,18 +15,17 @@ public class Amber {
     private Document rootDocument;
     private List<Course> courseItems = new ArrayList<Course>();
 
-    public Amber(String sourceDocument) throws IOException {
-        File input = new File(sourceDocument);
-        rootDocument = Jsoup.parse(input, "UTF-8");
+    public Amber(String rawDocument) {
+
+        rootDocument = Jsoup.parse(rawDocument);
 
         Element courseTable = rootDocument.select("tbody").last();
-        courseTable.child(0).remove();
+        courseTable.children().remove(0);
         Elements courseRows = courseTable.children();
 
         for(Element row : courseRows) {
             courseItems.add(new Course(row));
         }
-
     }
 
     public List<Course> getCourseItems() {
